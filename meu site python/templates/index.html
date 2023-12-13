@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+</head>
+<body>
+
+    <style>
+        body {
+            text-align: center;
+        }
+              
+        img {
+            margin: 0 auto;
+            
+            display: block;
+        }
+
+    </style>
+
+    
+    <h1>ENERGIA SOLAR</h1> 
+    Energia solar Off grid com banco de baterias
+
+    
+    <ul>
+        {% for imagem in imagens %}
+            <li><img src="{{ imagem }}" alt="Imagem"></li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        {% for link in links %}
+            <li><a href="{{ link.url }}" target="_blank">{{ link.texto }}</a></li>
+        {% endfor %}
+    </ul>
+
+     
+
+ <body>
+        <h1>Bem-vindo ao meu site!</h1>
+        <p>Clique no link abaixo para baixar o PDF ENERGIA SOLAR PORTIFÓLIO:</p>
+        <a href="{{ url_for('static', filename= 'ENERGIA SOLAR PORTIFÓLIO-1.pdf') }}" target="_blank">Download PDF</a>
+</body>
+
+
+
+
+<body>
+    <h1>ENERGIA SOLAR TÉRMICA E GERADORES A DIESEL</h1>
+    <img src="{{ 'static/solar2.jpg' }}" alt="Imagem">
+</body>
+
+
+<ul>
+    {% for link in links %}
+        <li><a href="{{ link.url }}" target="_blank">{{ link.texto }}</a></li>
+    {% endfor %}
+</ul>
+
+
+<body>
+    
+    <img src="{{ 'static/solar3.jpg' }}" alt="Imagem">
+    
+</body>
+
+<body>
+    <h1>VISITE MINHAS REDES SOCIAIS</h1>
+    <p>Visite o <a href="https://m.facebook.com/profile.php?id=100063595992181" target="_blank">FACEBOOK</a>.</p>
+    <p>Visite o <a href="https://www.instagram.com/josuediogodos/?next=%2F" target="_blank">INSTAGRAN</a>.</p>
+    <p>Visite o <a href="https://produto.mercadolivre.com.br/MLB-1568572814-2-projetos-energia-solar-planilha-de-calculo-offgrid-_JM#reco_item_pos=0&reco_backend=machinalis-seller-items-pdp&reco_backend_type=low_level&reco_client=vip-seller_items-above&reco_id=59e88c66-0ca6-4da6-bc38-618aa7e2a167" target="_blank">MERCADDO LIVRE</a>.</p>
+
+
+
+
+</body>
+
+
+
+
+</body>
+</html>
